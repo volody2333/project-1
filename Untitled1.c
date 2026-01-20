@@ -28,14 +28,14 @@ int main() {
    	//bool Car = true;
 	//bool RedCar = foul;
 	
-    // до -32 768
+    // Г¤Г® -32 768
 	//short s = 500;
 	
     //unsigned x = 5;
     
 	//int a = 5, b = 10, res;
 	
-	// 0 - 4 млн
+	// 0 - 4 Г¬Г«Г­
 	//unsigned int x1 = 6;
 	
 	//long x2 = 5;
@@ -49,7 +49,7 @@ int main() {
 	//double x6 = 5.48538548345853;
 	
 	//char sym = 'Q';
-	// Запись символа.
+	// Г‡Г ГЇГЁГ±Гј Г±ГЁГ¬ГўГ®Г«Г .
 	
 	
 	
