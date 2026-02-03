@@ -3,6 +3,82 @@
 #include <stdbool.h>
 
 int main() {
+//	float i;
+//	for(i = 100; i > 10; i /= 2) 
+//		printf("%.2f\n", i);
+
+//bool car = true;
+//int x = 0;
+//while(car) {
+//	printf("Enter a number:\n");
+//	scanf("%d", &x);
+//	if(x == 1)
+//	car = false;
+//}
+
+//float i = 1000;
+//while(i > 10) {
+//	printf("%.2f\n", i);
+//	i /= 20;
+//}		
+
+//bool car = false;
+//do {
+//printf("Yes\n");
+//} while(car);
+
+//int x;
+//for(x = 0; x < 50; x++) {
+//	if(x == 3)
+//	break;
+//	
+//	if(x % 2 == 0)
+//       continue;	
+//	printf("%d\n", x);
+//}
+
+//int arr[] = {5, 67, 0, -2, 6};
+//int i = 0;
+//while(i < 5) {
+//	printf("%d\n", arr[i]);
+//	i++;
+//}
+
+int arr[] = {5, -68, 1, -2, 6}; 
+
+int x;
+printf("Massiv: \n");
+for(x = 0; x < 5; x++)  {
+printf("%d ", arr[x]);
+}
+
+
+printf("\n");
+
+int min = arr[0];
+int max = arr[0];
+int  i;
+for(i = 0; i < 5; i++) {
+	if(arr[i] < min)
+	min = arr[i];
+	if(arr[i] > max)
+	max = arr[i];
+	
+} 
+printf("Minimum: %d\n", min);
+printf("Maximum: %d\n", max);
+	return 0;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//Услов. опер. свич кейс более точен, ёмок.
 //    int x = 15;
@@ -45,11 +121,6 @@ int main() {
 //	
 //	return 0;
 //}
-	
-	
-	
-	
-	
 	
 	
 	//СОЗДАНИЕ МАССИВА
