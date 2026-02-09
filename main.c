@@ -2,7 +2,72 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+void info(void);
+
+
+void sum(int a, int b);
+float mult(float a, float b);
+void string(char arr[]);
+
 int main() {
+	sum(20, 50);
+	int x = 5, y = 7;
+	sum(x, y);
+	
+	string("Hello");
+	char word[] = {'s', 'o', 'm', 'e'};
+	string(word);
+	
+	float result = mult(4.5f, 7.8f);
+	printf("%.2f\n", result);
+	
+	//info();
+	//info();	
+	return 0;	
+}
+
+void sum(int a, int b) {
+	int res = a + b;
+	printf("Resultat: %d\n", res);
+}
+void string(char arr[]) {
+	printf("some\n", arr);
+	
+}
+
+float mult(float a, float b) {
+	float res = a * b;
+	printf("Resultat: %.2d\n", res);
+	return res;
+}
+
+	
+	void info() {
+	printf("Hello\n");
+	printf("Cool!\n");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //	float i;
 //	for(i = 100; i > 10; i /= 2) 
 //		printf("%.2f\n", i);
@@ -44,40 +109,32 @@ int main() {
 //	i++;
 //}
 
-int arr[] = {5, -68, 1, -2, 6}; 
-
-int x;
-printf("Massiv: \n");
-for(x = 0; x < 5; x++)  {
-printf("%d ", arr[x]);
-}
-
-
-printf("\n");
-
-int min = arr[0];
-int max = arr[0];
-int  i;
-for(i = 0; i < 5; i++) {
-	if(arr[i] < min)
-	min = arr[i];
-	if(arr[i] > max)
-	max = arr[i];
-	
-} 
-printf("Minimum: %d\n", min);
-printf("Maximum: %d\n", max);
-	return 0;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//int arr[] = {5, -68, 1, -2, 6}; 
+//
+//int x;
+//printf("Massiv: \n");
+//for(x = 0; x < 5; x++)  {
+//printf("%d ", arr[x]);
+//}
+//
+//
+//printf("\n");
+//
+//int min = arr[0];
+//int max = arr[0];
+//int  i;
+//for(i = 0; i < 5; i++) {
+//	if(arr[i] < min)
+//	min = arr[i];
+//	if(arr[i] > max)
+//	max = arr[i];
+//	
+//} 
+//printf("Minimum: %d\n", min);
+//printf("Maximum: %d\n", max);
+//	return 0;
+//}
+//	
 	
 	
 	//Услов. опер. свич кейс более точен, ёмок.
