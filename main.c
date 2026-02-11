@@ -2,72 +2,103 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-void info(void);
 
 
-void sum(int a, int b);
-float mult(float a, float b);
-void string(char arr[]);
+//ÑÒÐÓÊÒÓÐÛ ÄÀÍÍÛÕ
+//ñòðóêòûðû óäîáíûÁ èìè ìîæíî îïèñàòü ëþáîé îáúåêò
+struct Car {
+	int speed;
+	char name[50];
+	float weight;
+};
 
 int main() {
-	sum(20, 50);
-	int x = 5, y = 7;
-	sum(x, y);
+	struct Car bmw;
+	bmw.speed = 250;
+	strcpy(bmw.name, "BMW M5");
+	bmw.weight = 2500.00f;
 	
-	string("Hello");
-	char word[] = {'s', 'o', 'm', 'e'};
-	string(word);
+	struct Car audi = {300, "Audi A8", 2700.00f};
+	printf("%s you speed: %d\n", audi.name, audi.speed);
+	printf("%s you speed: %d\n", bmw.name, bmw.speed);
 	
-	float result = mult(4.5f, 7.8f);
-	printf("%.2f\n", result);
 	
-	//info();
-	//info();	
-	return 0;	
+	//int speed = 200;
 }
 
-void sum(int a, int b) {
-	int res = a + b;
-	printf("Resultat: %d\n", res);
-}
-void string(char arr[]) {
-	printf("some\n", arr);
-	
-}
 
-float mult(float a, float b) {
-	float res = a * b;
-	printf("Resultat: %.2d\n", res);
-	return res;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ôóíêöèè
+//void info(void);
+//
+//
+//void sum(int a, int b);
+//float mult(float a, float b);
+//void string(char arr[]);
+//
+//int main() {
+//	sum(20, 50);
+//	int x = 5, y = 7;
+//	sum(x, y);
+//	
+//	string("Hello");
+//	char word[] = {'s', 'o', 'm', 'e'};
+//	string(word);
+//	
+//	float result = mult(4.5f, 7.8f);
+//	printf("%.2f\n", result);
+//	
+//	//info();
+//	//info();	
+//	return 0;	
+//}
+//
+//void sum(int a, int b) {
+//	int res = a + b;
+//	printf("Resultat: %d\n", res);
+//}
+//void string(char arr[]) {
+//	printf("some\n", arr);
+//	
+//}
+//
+//float mult(float a, float b) {
+//	float res = a * b;
+//	printf("Resultat: %.2d\n", res);
+//	return res;
+//}
+//
+//	
+//	void info() {
+//	printf("Hello\n");
+//	printf("Cool!\n");
+//}
+//	
 	
-	void info() {
-	printf("Hello\n");
-	printf("Cool!\n");
-}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 //	float i;
 //	for(i = 100; i > 10; i /= 2) 
 //		printf("%.2f\n", i);
