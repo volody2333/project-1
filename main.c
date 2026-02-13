@@ -2,28 +2,36 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+//УКАЗАТЕЛИ - Адреса
+//int main() {
+//int num = 0;
+//int * pNum = &num;
+//printf("%p - %p\n", pNum, &num);
+//// p - point (указатель)
+////Вывод значения через указатель
+//printf("%d\n", num); // - эта команда менее эффективна, чем нижняя.
+//*pNum = 10; //Смена значения
+//printf("%d - %d\n", *pNum, num);
+//	
+//	return 0;
+//}
 
-
-//СТРУКТУРЫ ДАННЫХ
-//структыры удобныБ ими можно описать любой объект
-struct Car {
-	int speed;
-	char name[50];
-	float weight;
+struct Abstract {
+	int width, height; //ширина, высота
 };
 
+void calc(struct Abstract *obj); //функция будет высчитывать площадь объекта который мы будем передавать в скобках ()
+
 int main() {
-	struct Car bmw;
-	bmw.speed = 250;
-	strcpy(bmw.name, "BMW M5");
-	bmw.weight = 2500.00f;
+	struct Abstract square = {5, 7};
+	calc(&square); //в функции обращаемся к объекту (квадрат)
 	
-	struct Car audi = {300, "Audi A8", 2700.00f};
-	printf("%s you speed: %d\n", audi.name, audi.speed);
-	printf("%s you speed: %d\n", bmw.name, bmw.speed);
-	
-	
-	//int speed = 200;
+	return 0;
+}
+
+void calc(struct Abstract *obj) {
+	int res = obj->width * obj->height; //умножили ширину на высоту
+	printf("Result: %d\n", res);
 }
 
 
@@ -40,14 +48,27 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
+//СТРУКТУРЫ ДАННЫХ
+//структыры удобныБ ими можно описать любой объект
+//struct Car {
+//	int speed;
+//	char name[50];
+//	float weight;
+//};
+//
+//int main() {
+//	struct Car bmw;
+//	bmw.speed = 250;
+//	strcpy(bmw.name, "BMW M5");
+//	bmw.weight = 2500.00f;
+//	
+//	struct Car audi = {300, "Audi A8", 2700.00f};
+//	printf("%s you speed: %d\n", audi.name, audi.speed);
+//	printf("%s you speed: %d\n", bmw.name, bmw.speed);
+//	
+//	
+//	//int speed = 200;
+//}
 
 
 //Функции
